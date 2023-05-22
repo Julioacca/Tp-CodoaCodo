@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleFormularios.css">
+    <title>Pintura</title>
+    
+</head>
+<body>
+    <div class="contenedor">
+        <div class="formulario">
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+              
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+              
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+              
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <div class="date-inputs">
+                  <select name="dia" id="dia" required>
+                    <option value="" disabled selected>Día</option>
+                  </select>
+              
+                  <select name="mes" id="mes" required>
+                    <option value="" disabled selected>Mes</option>
+                  </select>
+              
+                  <select name="anio" id="anio" required>
+                    <option value="" disabled selected>Año</option>
+                  </select>
+                </div>
+              
+                <button type="submit" id="enviar">Enviar</button>
+              </form>
+              
+        </div>
+    </div>
+    <section id="taller">
+        <div class="contenedor">
+            <div class="imagen">
+                <img src="img/P&Doleos2.jpg" alt="">
+            </div>
+            <div class="Taller">
+                <h2>TALLER DE PINTURA</h2>
+                <h3>DURACIÓN</h3><p>Anual - Sumate cuando quieras siempre que haya cupos disponibles.</p>
+
+                <h3>MATERIAL</h3>
+                <p>TRAE TUS MATERIALES PARA PINTAR, acrilicos, pinceles y bastidor</p>
+                
+                <h3>El TALLER</h3>
+                <p>Buscamos en las herramientas múltiples que da el arte de la pintura, para lograr una propuesta original única y creativa. Trabajando desde lo abstracto y la idea hasta lograr un resultado propio de cada participante del taller.</p>
+            </div>
+        </div>
+    </section>
+    <script src="javaFormulario.js"></script>
+</body>
+</html>
