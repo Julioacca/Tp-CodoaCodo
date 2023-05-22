@@ -1,0 +1,130 @@
+
+#horarios{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  
+}
+
+
+#horarios .dia{    padding: 5px 0;
+  background: #444;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  display: block;
+  width: 100%;}
+
+.clase{
+  display: flex;
+  flex-direction: row;
+  
+  
+}
+.evento{
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  
+}
+.evento .imagen{
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(234, 235, 202);
+}
+.hora{
+  padding-top: 50px;
+  font-weight: 600;
+  color: #444;
+  
+}
+.evento .taller{
+  padding-top: 15px;
+  padding-left: 50px;
+  font-weight: 600;
+  color: #444;
+}
+.horariosPC{display: none;}
+
+
+
+@media (min-width: 768px){
+  #horarios{
+    display: grid;
+    grid-template-areas: ".horariosPC .lunes .martes .miercoles .jueves . viernes";
+    max-width: 1400 px;
+    
+  }
+  
+  .horariosPC{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  .cabecera{padding: 5px 0;
+    background: #444;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+  }
+  .horaPC{
+    padding-top: 50px;
+    padding-left: 25px;
+    font-weight: 600;
+    color: #444;
+  }
+  .horaPC:first-child{
+    padding-top: 50px;
+
+  }
+  .horaPC:nth-child(2){
+    padding-top: 165px;
+  }
+  .horaPC:nth-child(3){
+    padding-top: 165px;
+  }
+  .horaPC:nth-child(4){
+    padding-top: 165px;
+  }
+  .horaPC:nth-child(5){
+    padding-top: 165px;
+  }
+  
+  .clasePC{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    
+  }
+  
+  .hora{
+    display: none;
+  }
+  .evento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+  }
+  
+  .clase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    
+  }
+  .evento .taller{
+    padding-top: 0;
+    padding-left: 0;
+    font-weight: 600;
+    color: #444;
+  }
+}
