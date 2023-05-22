@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleFormularios.css">
+    <title>Dibujo</title>
+    
+</head>
+<body>
+    <div class="contenedor">
+        <div class="formulario">
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+              
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+              
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+              
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <div class="date-inputs">
+                  <select name="dia" id="dia" required>
+                    <option value="" disabled selected>Día</option>
+                  </select>
+              
+                  <select name="mes" id="mes" required>
+                    <option value="" disabled selected>Mes</option>
+                  </select>
+              
+                  <select name="anio" id="anio" required>
+                    <option value="" disabled selected>Año</option>
+                  </select>
+                </div>
+              
+                <button type="submit" id="enviar">Enviar</button>
+              </form>
+              
+        </div>
+    </div>
+    <section id="taller">
+        <div class="contenedor">
+            <div class="imagen">
+                <img src="img/P&Dlapices-dibujo.jpg" alt="">
+            </div>
+            <div class="Taller">
+                <h2>TALLER DE DIBUJO</h2>
+                <h3>DURACIÓN</h3><p>Anual - Sumate cuando quieras</p>
+
+                <h3>MATERIAL</h3>
+                <p> Deberás traer papel, goma, lápiz negro y lápices de colores, recomendamos la marca Giotto.</p>
+                
+                <h3>El TALLER</h3>
+                <p>En este taller aprenderás a dibujar desde cero o podrás perfeccionar tu técnica. Descubrí el mundo de la ilustración a lapiz partiendo de la figura humana para llegar a todo lo que tu imaginación pueda crear.</p>
+            </div>
+        </div>
+    </section>
+    <script src="javaFormulario.js"></script>
+</body>
+</html>
