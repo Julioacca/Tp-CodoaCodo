@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background-color: rgb(249, 249, 252);
+}
+
+.contenedor {
+    max-width: 1400px;
+    margin: auto;
+}
+
+form {
+    width: 50%;
+    margin: 15vh auto;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 9px;
+    border-width: 0cm;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    background-color: #9E5F85;
+    background-color: rgb(249, 249, 252);
+    margin: 25px;
+}
+
+button:hover {
+    background-color: #754763;
+}
+#registro{
+    margin: 25px;
+    padding: 5px 20px;
+}
